@@ -1,0 +1,160 @@
+/* Reset CSS */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* poprawa czytelności */
+  -webkit-text-size-adjust: 100%; /* iOS zoom fix */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main CSS */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  color: rgb(81, 81, 81);
+  margin-top: 8px;
+}
+
+header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background-color: #4882bb;
+  -webkit-box-shadow: 0px 8px 20px -5px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 20px -5px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 20px -5px rgba(66, 68, 90, 1);
+}
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#logo-container h1 {
+  display: none;
+}
+#header-logo {
+  width: 50px;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+}
+nav > ul > li {
+  margin: 0 12px;
+}
+
+main {
+  padding: 40px 65px;
+}
+#welcome {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+#welcome h2 {
+  margin-bottom: 10px;
+}
+#news-heading {
+  margin: 20px;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+article {
+  display: flex;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid lightblue;
+  width: 100%;
+  max-width: 700px;
+}
+article img {
+  width: 250px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #cfe2f3;
+}
+#footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#footer-logo-container img {
+  width: 40px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
